@@ -49,6 +49,18 @@
     background-color: #AE923E;
 }
 
+@media (max-width:767px) {
+    .confluence-first::before{
+        content: "";
+        position: absolute;
+        top: 69%;
+        right: -44px;
+        height: 40% !important;
+        width: 10px;
+        border-radius: 6px;
+        background-color: #AE923E;
+    }
+}
 .confluence-heading{
     color: #AE923E;
     font-size: 31px;
