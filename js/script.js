@@ -64,8 +64,3 @@ setTimeout(function(){
     textHeader.style.display = "block";
 }, 2500);
 
-
-window.onload = () =>{
-    var video = document.getElementById("autoplayVideo");
-    video.play();
-};
