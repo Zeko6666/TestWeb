@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Server Maintainance</title>
+    <link rel="stylesheet" href="../css/ServerMaintainace.css">
+    <link rel="icon" href="../img/ServerError/error-logo.svg">
+</head>
+<body>
+    <div class="landing">
+        <div class="container">
+            <div class="image">
+                <img src="../img/ServerError/error.svg" alt="error-logo">
+            </div>
+            <div class="text">
+                <h1>جاري العمل على تحديث الموقع شكراً لإنتظاركم</h1>
+                <p>سيكون الموقع متاح خلال</p>
+                <div class="rectangle" dir="rtl">
+                    <span class="days" id="d">
+                      00
+                    </span><span class="point">:</span>
+                    <span class="minutes" id="m">
+                      00
+                    </span><span class="point">:</span>
+                    <span class="seconds" id="s">
+                      00
+                    </span>
+                  </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var countDownDate = new Date("Sep 1 , 2023 00:00:00").getTime();
+        var x = setInterval(function(){
+          var now = new Date().getTime();
+          var distance = countDownDate - now ; 
+          var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+          var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+          var seconds = Math.floor((distance % (1000 * 60 )) / 1000);
+  
+          document.getElementById("d").innerHTML = days;
+          document.getElementById("m").innerHTML = minutes ; 
+          document.getElementById("s").innerHTML = seconds ; 
+        }, 1000);
+      </script>
+</body>
+</html>

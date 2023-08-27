@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.top-bar {
+  background: #333;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+  width: 50%;
+  margin: 130px auto 20px;
+  position: relative;
+}
+
+.btn-pdf {
+  background: coral;
+  color: #fff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 0.7rem 2rem;
+  font-weight: bold;
+}
+
+.btn-pdf:hover {
+  opacity: 0.9;
+}
+
+.page-info {
+  margin-left: 1rem;
+}
+
+.error {
+  background: orangered;
+  color: #fff;
+  padding: 1rem;
+}
+
+.download-icon{
+  font-size: 35px;
+  position: absolute;
+  left: 30px;
+  color: #fff;
+}
